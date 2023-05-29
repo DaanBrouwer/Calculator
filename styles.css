@@ -1,0 +1,44 @@
+body {
+  background-color: aliceblue;
+  margin: 0;
+  height: 100dvh;
+}
+.Primary-Header {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.resultheader {
+  display: flex;
+  gap: 10px;
+}
+.calculator {
+  background-color: bisque;
+  border-radius: 20px;
+  padding: 30px;
+  width: fit-content;
+  height: fit-content;
+}
+.buttons {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.operators {
+  display: flex;
+  flex-direction: column;
+}
