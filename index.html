@@ -16,26 +16,26 @@
       <div class="calculator">
         <div class="resultheader">
           <a>Result:</a>
-          <input />
+          <input id="inputField" />
         </div>
         <div class="buttons">
           <div class="numbers">
-            <button onclick="numberpress(1)">1</button>
-            <button onclick="numberpress(2)">2</button>
-            <button onclick="numberpress(3)">3</button>
-            <button onclick="numberpress(4)">4</button>
-            <button onclick="numberpress(5)">5</button>
-            <button onclick="numberpress(6)">6</button>
-            <button onclick="numberpress(7)">7</button>
-            <button onclick="numberpress(8)">8</button>
-            <button onclick="numberpress(9)">9</button>
+            <button onclick="numberToInput(1)">1</button>
+            <button onclick="numberToInput(2)">2</button>
+            <button onclick="numberToInput(3)">3</button>
+            <button onclick="numberToInput(4)">4</button>
+            <button onclick="numberToInput(5)">5</button>
+            <button onclick="numberToInput(6)">6</button>
+            <button onclick="numberToInput(7)">7</button>
+            <button onclick="numberToInput(8)">8</button>
+            <button onclick="numberToInput(9)">9</button>
           </div>
           <div class="operators">
             <button onclick="operatorpress('+')">+</button>
             <button onclick="operatorpress('-')">-</button>
             <button onclick="operatorpress('*')">*</button>
             <button onclick="operatorpress('/')">/</button>
-            <button onclick="resultpress('=')">=</button>
+            <button onclick="operate()">=</button>
           </div>
         </div>
     </div>
