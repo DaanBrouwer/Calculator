@@ -1,45 +1,56 @@
-let number = 0;
-let number2 = 0;
+let number = "";
+let number2 = "";
 let operator = "";
 
 function numberToInput(btn) {
-  document.getElementById("inputField").value += btn;
+  number += btn;
+  document.getElementById("inputField").value = number;
 }
 
 function operatorpress(btn) {
-  number = parseInt(document.getElementById("inputField").value);
-  btn == "=" ? operate() : (operator = btn);
-  document.getElementById("inputField").value = "";
+  number2 = number;
+  number = "";
+  operator = btn;
+
+  console.log(number, operator, number2);
 }
 
 function operate() {
-  number2 = parseInt(document.getElementById("inputField").value);
+  number = parseFloat(number2);
+  number2 = parseFloat(document.getElementById("inputField").value);
+  console.log(number, number2);
   switch (operator) {
     case "+":
       add();
+
+      console.log(number, number2, operator);
       break;
     case "-":
       subtract();
+
       break;
     case "/":
       divide();
+
       break;
     case "*":
       multiply();
+
       break;
     default:
       break;
   }
+  document.getElementById("inputField").value = number;
 }
 function add() {
-  document.getElementById("inputField").value = number + number2;
+  number += number2;
 }
 function subtract() {
-  document.getElementById("inputField").value = number - number2;
+  number = number - number2;
 }
 function multiply() {
-  document.getElementById("inputField").value = number * number2;
+  number *= number2;
 }
 function divide() {
-  document.getElementById("inputField").value = number / number2;
+  number /= number2;
 }
